@@ -1,0 +1,36 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+@{ViewBag.Title = "Admin"; }
+@section UpperHelpers{
+    <link rel="stylesheet" href="~/Scripts/fullcalendar/fullcalendar.css" />
+    <script src="~/Scripts/fullcalendar/lib/jquery.min.js"></script>
+    <script src="~/Scripts/fullcalendar/lib/moment.min.js"></script>
+    <script src="~/Scripts/fullcalendar/fullcalendar.js"></script>
+}
+
+<div class="container-fluid main_content">
+    <div class="row">
+        <div class="col-sm-12 pull-right component">
+            @{Html.RenderPartial("../Components/_Calendar"); }
+        </div>
+    </div>
+</div>
+
+@section BottomHelpers{
+    <script>
+        $(function () {
+
+
+            $('#calendar').fullCalendar({
+                
+            })
+
+        });
+    </script>
+
+}
+
+

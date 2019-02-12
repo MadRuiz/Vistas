@@ -1,0 +1,40 @@
+﻿
+
+@{ViewBag.Title = "Admin"; }
+@section UpperHelpers{
+
+    <link rel="stylesheet" href="~/Content/percircle.css">
+}
+
+<div class="container-fluid main_content">
+    <div class="row">
+        <div class="col-sm-5 pull-left component">
+            @{Html.RenderPartial("../Components/_TablaReservas"); }
+        </div>
+
+        <div class="col-sm-7 pull-right component">
+            @{Html.RenderPartial("../Components/_TimerSalones"); }
+        </div>
+
+        <div class="col-sm-12 component">
+            @*@{Html.RenderPartial("../Components/_DetalleAulas"); }*@
+        </div>
+
+    </div>
+
+
+</div>
+
+@section BottomHelpers{
+    <script src="~/Scripts/lib/jquery.min.js"></script>
+    <script src="~/Scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="~/Scripts/percircle.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#countdown1").percircle({ perdown: true, secs: 71.5, timeUpText: ':D!' });
+            $("#countdown2").percircle({ perdown: true, secs: (1 * 60) + 2, timeUpText: 'yeey!' });
+            $("#countdown3").percircle({ perdown: true, secs: 45, timeUpText: 'afsdf' });
+        });
+
+    </script>
+}
