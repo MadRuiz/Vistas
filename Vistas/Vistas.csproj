@@ -382,12 +382,12 @@
     <Content Include="Views\Components\_TimerSalones.cshtml" />
     <Content Include="Views\Components\_Mainbar.cshtml" />
     <Content Include="Views\Components\_DetalleAulas.cshtml" />
-    <Content Include="Views\Components\Modals\_NuevaReservaModal.cshtml" />
     <Content Include="Scripts\jquery-3.2.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.2.1.min.map" />
     <Content Include="Views\Home\Docente.cshtml" />
     <Content Include="Views\Components\_Calendar.cshtml" />
     <Content Include="Views\Docente\Index.cshtml" />
+    <Content Include="Views\Components\Modals\_AgregarReservaModal.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
